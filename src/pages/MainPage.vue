@@ -1,5 +1,6 @@
 <template>
     <div class="border p-8 rounded-xl">
+        <LanguageSwitch />
         <DatePicker />
         <LineChart />
     </div>
@@ -8,11 +9,6 @@
 <script setup>
 import DatePicker from '@/components/DatePicker.vue';
 import LineChart from '@/components/LineChart.vue';
-import plFlag from '@/assets/icons/plIcon.svg'
-import enFlag from '@/assets/icons/enIcon.svg'
-
+import LanguageSwitch from '@/components/LanguageSwitch.vue';
 </script>
 
-<style lang="scss" scoped>
-
-</style>

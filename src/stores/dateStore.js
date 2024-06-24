@@ -20,7 +20,7 @@ export const useDateStore = defineStore('dateStore', {
     calculateDaysBetween() {
       if (this.startDate && this.endDate && this.startDate <= this.endDate) {
         this.daysBetween = differenceInDays(new Date(this.endDate), new Date(this.startDate));
-        this.generateRandomData(); // Corrected to use 'this.generateRandomData()'
+        this.generateRandomData();
       } else {
         this.daysBetween = 0;
       }

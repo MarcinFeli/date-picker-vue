@@ -4,5 +4,9 @@
 	"Invalid start date": "Invalid start date",
 	"Invalid end date": "Invalid end date",
 	"Days between dates": "Days between dates",
-	"Generate data": "Generate data"
+	"Generate data": "Generate data",
+	"Please enter a later date": "Please enter a later date",
+	"Data for specified date": "Data for specified date",
+	"Polish": "Polish",
+	"English": "English"
 }

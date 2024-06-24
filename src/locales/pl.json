@@ -4,5 +4,10 @@
 	"Invalid start date": "Nieprawidłowa data początkowa",
 	"Invalid end date": "Nieprawidłowa data końcowa",
 	"Days between dates": "Dni pomiędzy datami",
-	"Generate data": "Generuj dane"
+	"Generate data": "Generuj dane",
+	"Please enter a later date": "Podaj późniejszą datę",
+	"Difference in days": "Różnica w dniach",
+	"Data for specified date": "Dane dla wybranej daty",
+	"Polish": "Polski",
+	"English": "Angielski"
 }

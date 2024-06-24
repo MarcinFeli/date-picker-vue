@@ -7,16 +7,16 @@
 					class="block w-full py-[10px] px-[16px] rounded-[8px] text-neutral_store-800 border"
 					type="date"
 					@input="updateStartDate"/>
-				<span class="text-xs mt-1" v-if="!isValidStartDate && startDate !== ''">{{ $t('Invalid start date') }}</span>
+				<span class="text-xs mt-1 text-red-500" v-if="!isValidStartDate && startDate !== ''">{{ $t('Invalid start date') }}</span>
 			</div>
 			<div class="flex flex-col">
 				<label>{{ $t('Select end date') }}</label>
 				<input class="block w-full py-[10px] px-[16px] rounded-[8px] text-neutral_store-800 border" type="date" @input="updateEndDate" />
-				<span class="text-xs mt-1" v-if="!isValidEndDate && endDate !== ''">{{ $t('Invalid end date') }}</span>
-				<span class="text-xs mt-1" v-else-if="endBeforeStart && endDate !== ''">{{ $t('Podaj późniejszą datę ') }}</span>
+				<span class="text-xs mt-1 text-red-500" v-if="!isValidEndDate && endDate !== ''">{{ $t('Invalid end date') }}</span>
+				<span class="text-xs mt-1 text-yellow-600" v-else-if="endBeforeStart && endDate !== ''">{{ $t('Please enter a later date') }}</span>
 			</div>
 		</div>
-		<p class="text-center mt-8">{{ $t('Days between dates') }}: {{ daysBetween }}</p>
+		<p class="text-center mt-4 text-[#6D706B] text-sm">{{ $t('Days between dates') }}: {{ daysBetween }}</p>
 	</div>
 </template>
 
@@ -26,10 +26,8 @@ import { computed, ref } from 'vue'
 import { isDate, isValid, parseISO, getYear } from 'date-fns'
 
 const dateStore = useDateStore()
-
 const startDate = ref('')
 const endDate = ref('')
-
 const MIN_YEAR = 1900
 
 const updateStartDate = event => {
