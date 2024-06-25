@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="flex gap-8 text-center">
+		<div class="flex gap-8 text-left">
 			<div class="flex flex-col">
 				<label>{{ $t('Select start date') }}:</label>
 				<input
@@ -10,7 +10,7 @@
 				<span class="text-xs mt-1 text-red-500" v-if="!isValidStartDate && startDate !== ''">{{ $t('Invalid start date') }}</span>
 			</div>
 			<div class="flex flex-col">
-				<label>{{ $t('Select end date') }}</label>
+				<label>{{ $t('Select end date') }}:</label>
 				<input class="block w-full py-[10px] px-[16px] rounded-[8px] text-neutral_store-800 border" type="date" @input="updateEndDate" />
 				<span class="text-xs mt-1 text-red-500" v-if="!isValidEndDate && endDate !== ''">{{ $t('Invalid end date') }}</span>
 				<span class="text-xs mt-1 text-yellow-600" v-else-if="endBeforeStart && endDate !== ''">{{ $t('Please enter a later date') }}</span>

@@ -28,7 +28,7 @@
                     <LanguageSwitch/>
                 </div>
                 <div class="mt-5 sm:mt-6">
-                  <button type="button" class="inline-flex w-full justify-center rounded-md bg-[#1d5ad1] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#1d38d1]" @click="open = false">{{ $t('Go to') }} </button>
+                  <button type="button" class="inline-flex w-full justify-center rounded-md bg-[#1d5ad1] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#1d38d1]" @click="open = false">{{ $t('Start') }} </button>
                 </div>
               </DialogPanel>
             </TransitionChild>
