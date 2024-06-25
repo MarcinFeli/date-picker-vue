@@ -8,5 +8,9 @@
 	"Please enter a later date": "Please enter a later date",
 	"Data for specified date": "Data for specified date",
 	"Polish": "Polish",
-	"English": "English"
+	"English": "English",
+	"Welcome in the data generator": "Welcome in the data generator",
+	"1. Start date must be later than 1900": "1. Start date must be later than 1900",
+	"2. The end date must be later than the selected start date": "2. The end date must be later than the selected start date",
+	"Go to": "Go to"
 }

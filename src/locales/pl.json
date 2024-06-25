@@ -9,5 +9,9 @@
 	"Difference in days": "Różnica w dniach",
 	"Data for specified date": "Dane dla wybranej daty",
 	"Polish": "Polski",
-	"English": "Angielski"
+	"English": "Angielski",
+	"Welcome in the data generator": "Witaj w generatorze danych",
+	"1. Start date must be later than 1900": "1. Data początkowa musi być późniejsza niż 1900",
+	"2. The end date must be later than the selected start date": "2. Data końcowa musi być późniejsza niż wybrana data początkowa",
+	"Go to": "Przejdź"
 }
